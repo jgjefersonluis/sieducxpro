@@ -52,5 +52,4 @@ def remover_cliente(request,id=None):
         messages.warning(request, "Cliente removido com sucesso!")
         return redirect('lista_de_clientes')
 
-    return render(request, "clientes/remover_cliente.html",{'cliente':cliente}, "clientes/adicionar_cliente.html",{'form':form})
-
+    return render(request, "clientes/remover_cliente.html",{'cliente':cliente})
