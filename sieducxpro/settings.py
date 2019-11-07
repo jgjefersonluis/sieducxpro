@@ -27,7 +27,7 @@ SECRET_KEY = '(v&qqr4!ad_m4feur&40g&adt2(o7#l)by4g*$v0af6m)qp96-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://sieducxpro-jg.herokuapp.com']
 
 
 # Application definition
@@ -125,9 +125,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = (
-    STATIC_DIR,
-)
+LOGOUT_REDIRECT_URL = 'base'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
