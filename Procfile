@@ -1,0 +1,1 @@
+web: gunicorn sieducxpro.wsgi --log-file -
